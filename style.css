@@ -1,0 +1,17 @@
+body {
+    background-color: rgb(20, 20, 20);
+}
+
+ul {
+    list-style: none;
+}
+ul:hover #topSquare {
+    
+}
+
+#navigationButton div {
+    height: 10px;
+    width: 50px;
+    margin: 7px 0px 7px 0px;
+    background-color: white;
+}
