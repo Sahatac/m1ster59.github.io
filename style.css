@@ -1,17 +1,32 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&family=Source+Sans+Pro:wght@300&display=swap');
+
 body {
     background-color: rgb(20, 20, 20);
+    color: white;
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+    scroll-behavior: smooth;
 }
 
-ul {
+h1 {
+    font-size: 4rem;
+    transition: 0.5s;
+}
+h1:hover {
+    color: red;
+}
+
+#navigationButton {
     list-style: none;
+    position: fixed;
+    transition: 0.5s;
 }
-ul:hover #topSquare {
-    
-}
-
 #navigationButton div {
     height: 10px;
     width: 50px;
-    margin: 7px 0px 7px 0px;
+    margin: 7px;
     background-color: white;
+}
+#navigationButton:hover {
+    transform: translateX(50px);
 }
