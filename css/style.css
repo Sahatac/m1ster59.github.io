@@ -33,7 +33,7 @@ ul {
 #navigationMenu {
     height: 100vh;
     width: 0;
-    background-color: lightgreen;
+    background-color: gray;
     transition: 0.5s;
     float: left;
     margin: 0;
@@ -54,7 +54,7 @@ ul {
     opacity: 0;
 }
 #navigation:hover .navigationItem {
-    margin-left: 30px;
+    margin-left: 20px;
 }
 .navigationItem:first-of-type {
     margin-top: 150px;
@@ -69,7 +69,7 @@ ul {
     transition: 0.5s;
     background-color: rgb(20, 20, 20);
 }
-.navigationItem a {
+.navigationItem * {
     width: 80px;
     height: 80px;
     border-radius: 50%;
@@ -87,6 +87,27 @@ ul {
 
 figure {
     float: left;
+}
+figure:hover {
+    animation-name: Figure;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+}
+@keyframes Figure {
+    0% {color: white;}
+    8% {color: yellow;}
+    16% {color: orange}
+    24% {color: chocolate}
+    32% {color: brown;}
+    40% {color: red;}
+    48% {color: darkorchid;}
+    56% {color: darkblue;}
+    64% {color: blue;}
+    72% {color: aqua;}
+    80% {color: green;}
+    88% {color: lightgreen;}
+    96% {color: yellow;}
+    100% {color: white;}
 }
 
 img {
