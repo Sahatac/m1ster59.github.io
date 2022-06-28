@@ -1,0 +1,57 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&family=Source+Sans+Pro:wght@300&display=swap');
+
+body {
+    background-color: rgb(20, 20, 20);
+    color: white;
+    font-family: 'Roboto', sans-serif;
+    scroll-behavior: smooth;
+}
+
+.title {
+    text-align: center;
+    font-size: 4rem;
+}
+
+#navigationButton {
+    list-style: none;
+    float: left;
+    position: fixed;
+}
+#navigationButton div {
+    height: 10px;
+    width: 50px;
+    margin: 7px;
+    background-color: white;
+    transition: 0.5s;
+}
+#navigationMenu {
+    height: 100vh;
+    width: 0;
+    background-color: cyan;
+    transition: 0.5s;
+    float: left;
+    margin: 0;
+    padding: 0;
+    font-size: 3rem;
+}
+#firstElement {
+    margin-top: 90px;
+}
+#navigationMenu * {
+    opacity: 0;
+}
+#navigation:hover #navigationMenu {
+    width: 270px;
+}
+#navigation:hover #topSquare {
+    transform: translateY(17px) rotate(45deg);
+}
+#navigation:hover #buttomSquare {
+    transform: translateY(-17px) rotate(-45deg);
+}
+#navigation:hover #middleSquare {
+    opacity: 0;
+}
+#navigation:hover #navigationMenu * {
+    opacity: 100;
+}
