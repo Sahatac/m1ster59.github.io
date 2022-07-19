@@ -1,0 +1,11 @@
+body {
+    animation-name: noder;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes noder {
+    from {background-color: #1c1d1d;}
+    50% {background-color: red;}
+    to {background-color: #1c1d1d;}
+}
