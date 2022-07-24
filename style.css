@@ -1,75 +1,63 @@
-@import url('https://fonts.googleapis.com/css2?family=Edu+VIC+WA+NT+Beginner&family=Roboto:wght@300&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@500&display=swap');
-
 * {
     margin: 0;
     padding: 0;
-}
-:root {
-    --clr: rgb(20, 20, 20);
+    box-sizing: border-box;
+    font-family: sans-serif;
 }
 
 body {
-    font-family: 'Edu VIC WA NT Beginner', cursive;
-    background-color: var(--clr);
-    color: white;
+    scroll-behavior: smooth;
+    transition: background-color 1s ease;
+}
+
+ul {
+    list-style: none;
+}
+
+li {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+img {
+    height: 300px;
+    width: 300px;
+    margin: 20px;
+    border: 5px black solid;
+}
+
+figure {
+    display: flex;
+}
+
+figure * {
+    opacity: 0;
+    transform: translateY(150px);
+    transition: all .5s ease;
 }
 
 h1 {
-    text-align: center;
+    font-size: 6rem;
+}
+
+h2 {
     font-size: 4rem;
-    font-family: 'Dancing Script', cursive;
-    position: relative;
 }
 
-.title {
+h3 {
+    font-size: 2rem;
+}
+
+#title {
     text-align: center;
-    color: var(--clr);
-    top: 0;
-    left: 0;
-    position: absolute;
-}
-
-main {
-    margin-left: 140px;
-}
-
-#navigation {
-    width: 100px;
     height: 100vh;
-    border-top-right-radius: 50px;
-    border-bottom-right-radius: 50px;
-    background-color: blue;
-    position: fixed;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
+    margin-top: 50px;
 }
-#navigation li {
-    width: 110px;
-    height: 110px;
-    border-radius: 50%;
-    margin: 10px 30px;
-    transition-duration: 0.5s;
-    border: solid var(--clr) 10px;
-    background-color: white;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-#navigation li a {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-decoration: none;
-    color: black;
-}
-#navigation li a ion-icon {
-    font-size: 2.7rem;
-}
-#navigation li a span {
-    font-size: 1.5rem;
-}
-#navigation li:hover {
-    transform: translateX(50px);
+
+.active {
+    opacity: 1;
+    transform: translateY(0);
 }
