@@ -7,6 +7,7 @@
 
 body {
     scroll-behavior: smooth;
+    background-color: aqua;
     transition: background-color 1s ease;
 }
 
